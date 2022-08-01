@@ -1,0 +1,10 @@
+version: "3"
+services:
+  user-profile:
+    image: gellert5225/sc-user-profile:latest
+    container_name: sc-user-profile
+    build: .
+    ports:
+      - "4000:3000"
+    environment:
+      - PORT=3000
